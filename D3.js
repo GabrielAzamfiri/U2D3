@@ -224,9 +224,11 @@ console.log(charactersNames);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-let min = 0;
-let max = starWarsCharacters.length - 1;
-let n = Math.floor(Math.random() * (max - min + 1)) + min;
+// let min = 0;
+// let max = starWarsCharacters.length - 1;
+// let n = Math.round(Math.random() * (max - min + 1)) + min;
+n = Math.round(Math.random() * 9); // * 9 = starWarsCharacters.length -1 per usarlo come indice
+
 console.log(
   "Ciao mi chiamo",
   starWarsCharacters[n].name,
